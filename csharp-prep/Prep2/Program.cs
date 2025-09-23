@@ -4,11 +4,13 @@ class Program
 {
     static void Main(string[] args)
     {
+        //intialize the letter grade and get the users grade
         string letterGrade;
         Console.WriteLine("What is your grade? ");
         string gradeInText = Console.ReadLine();
         int grade = int.Parse(gradeInText);
 
+        //Set the letter grade based on there grade
         if (grade >= 90)
         {
             letterGrade = "A";
@@ -30,6 +32,8 @@ class Program
             letterGrade = "F";
         }
 
+
+        //Write there grade and if there failing or passing
         if (grade >= 70)
         {
             Console.WriteLine($"Great job your passing with a {letterGrade}. Keep it up!");
