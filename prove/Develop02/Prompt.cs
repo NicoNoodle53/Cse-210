@@ -2,7 +2,8 @@ using System;
 
 
 public class Prompt
-{
+{   
+    //Get random prompt from a list of 20 and return that prompt
     public string JournalPrompt()
     {
         string newPrompt;

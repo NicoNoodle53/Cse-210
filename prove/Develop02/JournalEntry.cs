@@ -4,10 +4,12 @@ using System.Runtime.InteropServices.Marshalling;
 public class JournalEntry
 {
 
+    //initialize variables
     public DateTime _date = DateTime.Now;
     public string _prompt;
     public string _response;
 
+    //display the prompt
     public void DisplayPrompt()
     {
         Prompt prompt = new Prompt();
@@ -16,6 +18,8 @@ public class JournalEntry
         Console.WriteLine(_prompt);
     }
 
+
+    //display every part of an entry
     public void DisplayEntry()
     {
         Console.WriteLine(_date);
